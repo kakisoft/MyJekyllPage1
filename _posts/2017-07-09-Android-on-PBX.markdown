@@ -68,5 +68,5 @@ We could not install init scripts for your distribution.
 あれ？サンプル設定ファイルのインストールできねーじゃん。  
 今日はもう疲れたから寝よう。
 
-
+1. EC2落とすの忘れてたよ！課金されるぢゃん！
 
