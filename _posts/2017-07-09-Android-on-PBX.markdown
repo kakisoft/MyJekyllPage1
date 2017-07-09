@@ -66,7 +66,13 @@ make: *** No rule to make target `sample'.  Stop.
 [ec2-user@ip-xxx-xxx-xxx-xxx asterisk-1.8.8.1]$ make config  
 We could not install init scripts for your distribution.  
 あれ？サンプル設定ファイルのインストールできねーじゃん。  
-今日はもう疲れたから寝よう。
+
+1. ディストリが原因なの？取り合えず控えておく。
+cat /etc/system-release
+Amazon Linux AMI release 2017.03
+
+1. 今日はもう疲れたから寝よう。
 
 1. EC2落とすの忘れてたよ！課金されるぢゃん！
+
 
