@@ -1,15 +1,17 @@
 ---
 layout: page
-title: About
+title: 趣旨
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+日々の業務で、「これ、いい考えかも。」と思いつくことは多いと思いますが、実際に行動に移す事はあまり無いのではないかと思います。  
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+そんな思いつきでも、ただの妄想で終わらせたら面白くない！ と、ほんの少しでも前進している事を実感するために、何かしらの記録を残す目的で書いています。
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+ポリシーは「数うちゃ当たる。」
+
+ある成功者は言った。  
+「私の人生は、1勝９敗だった。」
+
+同じように、勝てるまで負けを積み重ねて行こうじゃねーか！
+９回負けたら、次は勝ちだ！

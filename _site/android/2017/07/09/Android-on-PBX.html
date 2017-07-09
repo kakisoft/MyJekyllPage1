@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>LAN環境Android無料通話</title>
+  <meta name="description" content="【日付：2017/07/07〜2017/07/09】">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/android/2017/07/09/Android-on-PBX.html">
+  <link rel="alternate" type="application/rss+xml" title="Project Draft Logs" href="/feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Project Draft Logs</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">趣旨</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">LAN環境Android無料通話</h1>
+    <p class="post-meta"><time datetime="2017-07-09T21:23:00+09:00" itemprop="datePublished">Jul 9, 2017</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>【日付：2017/07/07〜2017/07/09】</p>
+
+<ol>
+  <li>
+    <p>(初動)  <br />
+構内電話網(IP-PBX)を構築してAndroidで無料通話をやってみよう！<br />
+<a href="http://blog.zamuu.net/2011/0429/ip-pbx-android/">http://blog.zamuu.net/2011/0429/ip-pbx-android/</a></p>
+  </li>
+  <li>
+    <p>Pantheon(KLUE 2.0)が入っていたジャンクPCに、Cent OSを入れる</p>
+  </li>
+  <li>
+    <p>せっかくだから最新版のイメージファイルを落とす</p>
+  </li>
+  <li>
+    <p>rufusを使い、USBブートディスク作成。</p>
+  </li>
+  <li>
+    <p>イメージファイルが4GB越えてて、使おうと思っていた、USBメモリ（4G）が使用不可。32Gを用意する。</p>
+  </li>
+  <li>
+    <p>ブートメニューが起動せず。<br />
+イメージファイル作成が失敗したのか？
+何度トライしてもうまく行かず。何故だ！？</p>
+  </li>
+  <li>
+    <p>どうやら、このジャンクPCでは32GのUSBメモリを認識できないみたいだ。<br />
+こういう、生々しい状況があるんで、「古いPCでも簡単に、遜色なく利用できますよ。」なんて情報は大してアテにならん。<br />
+渋々、ミニマム版(800M)のイメージファイルで作成する。</p>
+  </li>
+  <li>
+    <p>インストール完了。</p>
+  </li>
+  <li>
+    <p>インストール時に、ネットワーク設定を忘れてた（インストールボタン押したあと、子供を公園に連れて行った）ため、ネットワーク設定。</p>
+  </li>
+  <li>
+    <p>Cent OS 7から、設定方法が結構変わってる。。。。<br />
+（無線LAN内蔵でないのも影響し、少し面倒になってる。）
+インストール時に認識させて設定するほうが楽そう。<br />
+再インストール。</p>
+  </li>
+  <li>
+    <p>ついでにGUI環境にしておこう。</p>
+  </li>
+  <li>
+    <p>完了。<br />
+ログイン時、デフォルトでデスクトップ環境になるようにしておこう。</p>
+  </li>
+  <li>
+    <p>え？このシリーズって、デフォルトランレベル設定できないの？<br />
+ってか、ランレベルの切り替えもうまくいかんぞ。。<br />
+もういいや。ログインしてstartxで。</p>
+  </li>
+  <li>
+    <p>重い・・・あれ？こんなに動き悪かったっけか？<br />
+Asteriskインスト終わって、設定をチマチマやっていくも、息子の妨害に遭い、PCが床に落下。
+TVの放送終了後のような、悲しい画面が目の前に広がる。<br />
+嫁曰く、「シムシティの怪獣みたいな存在だから諦めて。」</p>
+  </li>
+  <li>
+    <p>不安程度が増してきたし、あのPCはでやるのは、もういいや。<br />
+いっそ、VPCとかでやってる人いないかな。<br />
+参照元記事の日付が５年前なんで、ちょっと不安だったのもあり、少し調べる。</p>
+  </li>
+  <li>
+    <p>居たよ！やってる人！<br />
+<a href="http://qiita.com/ganezasan/items/05b16a2254f066f6bbdc">http://qiita.com/ganezasan/items/05b16a2254f066f6bbdc</a></p>
+  </li>
+  <li>
+    <p>Qiita投稿記事を参考に、インストール＆設定。</p>
+  </li>
+</ol>
+
+<p>BPX？</p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Project Draft Logs</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Project Draft Logs</li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
