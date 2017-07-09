@@ -56,9 +56,17 @@ TVの放送終了後のような、悲しい画面が目の前に広がる。
 1. 居たよ！やってる人！  
 [http://qiita.com/ganezasan/items/05b16a2254f066f6bbdc](http://qiita.com/ganezasan/items/05b16a2254f066f6bbdc)
 
-1. Qiita投稿記事を参考に、インストール＆設定。
+1. セキュリティグループを作成。EC2インスタンス作成。  
+インスタンス名は「Asterisk」としておこう。
 
-BPX？
+1. 特に行き詰る事はなく、インストール完了。
+
+1. [ec2-user@ip-xxx-xxx-xxx-xxx asterisk-1.8.8.1]$ make sample  
+make: *** No rule to make target `sample'.  Stop.  
+[ec2-user@ip-xxx-xxx-xxx-xxx asterisk-1.8.8.1]$ make config  
+We could not install init scripts for your distribution.  
+あれ？サンプル設定ファイルのインストールできねーじゃん。  
+今日はもう疲れたから寝よう。
 
 
 
