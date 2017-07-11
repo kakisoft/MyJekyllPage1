@@ -5,13 +5,13 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 09 Jul 2017 23:22:55 +0900</pubDate>
-    <lastBuildDate>Sun, 09 Jul 2017 23:22:55 +0900</lastBuildDate>
+    <pubDate>Wed, 12 Jul 2017 00:21:27 +0900</pubDate>
+    <lastBuildDate>Wed, 12 Jul 2017 00:21:27 +0900</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>LAN環境Android無料通話</title>
-        <description>&lt;p&gt;【日付：2017/07/07〜2017/07/09】&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;【日付：2017/07/07〜2017/07/09】&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -81,12 +81,119 @@ TVの放送終了後のような、悲しい画面が目の前に広がる。&lt
 &lt;a href=&quot;http://qiita.com/ganezasan/items/05b16a2254f066f6bbdc&quot;&gt;http://qiita.com/ganezasan/items/05b16a2254f066f6bbdc&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Qiita投稿記事を参考に、インストール＆設定。&lt;/p&gt;
+    &lt;p&gt;セキュリティグループを作成。EC2インスタンス作成。&lt;br /&gt;
+インスタンス名は「Asterisk」としておこう。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;特に行き詰る事はなく、インストール完了。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;続いて設定。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;[ec2-user@ip-xxx-xxx-xxx-xxx asterisk-1.8.8.1]$ make sample&lt;br /&gt;
+make: *** No rule to make target `sample’.  Stop.&lt;br /&gt;
+[ec2-user@ip-xxx-xxx-xxx-xxx asterisk-1.8.8.1]$ make config&lt;br /&gt;
+We could not install init scripts for your distribution.&lt;br /&gt;
+あれ？サンプル設定ファイルのインストールできねーじゃん。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ディストリが原因なの？取り合えず控えておく。&lt;br /&gt;
+cat /etc/system-release&lt;br /&gt;
+Amazon Linux AMI release 2017.03&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;今日はもう遅いから寝よう。
+　&lt;br /&gt;
+　&lt;br /&gt;
+　&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;BPX？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;【日付：2017/07/11】&lt;/strong&gt;&lt;/p&gt;
 
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cent OS は最近 ver 7に上がり、それ以前と大きく変わったみたい。
+先日、サンプル設定ファイルがインストールできなかったのは、それも原因の一旦？&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;別のAMIで試してみようか。
+    &lt;ul&gt;
+      &lt;li&gt;Webuzo 2.2.9 Moodle 2.7.2 Application Manager on LAMP Stack centos 6.5 x86_6-52c23e0a-10c2-4d78-ac74-8d438d805435-ami-7005b218.2&lt;/li&gt;
+      &lt;li&gt;centos-6.8-hardened-x86_64-170117_21-disk1-d07a026a-15d3-4d17-97d4-333edabc2b58-ami-16ed0500.3&lt;/li&gt;
+      &lt;li&gt;Webuzo 2.2.9 Piwik 2.7.0 Application Manager on LAMP Stack centos 6.5 x86_64-ed0548ae-49e9-4edb-b8d9-36b3910d53e6-ami-c456e7ac.2&lt;/li&gt;
+      &lt;li&gt;ultraserve-centos-6.8-ami-database-hvm-2017.03.3-2-x86_64-gp2&lt;/li&gt;
+      &lt;li&gt;Webuzo 2.3.2 ownCloud 7.0.3 Application Manager on LAMP Stack centos 6.6 x86-bcf7a10b-628e-4ccf-9a47-3954db7f650a-ami-3eac3556.2&lt;/li&gt;
+      &lt;li&gt;2016-06-Recovery (No-LVM)-ACB-CentOS6-HVM&lt;/li&gt;
+      &lt;li&gt;ultraserve-centos-6.7-ami-pv-2016.03.2.x86_64-gp2&lt;/li&gt;
+      &lt;li&gt;spel-minimal-centos-6.8-pvm-2017.01.1.x86_64-gp2&lt;/li&gt;
+      &lt;li&gt;CentOS Linux 6 x86_64 HVM EBS 1602-74e73035-3435-48d6-88e0-89cc02ad83ee-ami-21e6d54b.3&lt;/li&gt;
+      &lt;li&gt;ultraserve-centos-6.9-ami-reverse_proxy-hvm-2017.03.2-4-x86_64-gp2&lt;/li&gt;
+      &lt;li&gt;ultraserve-centos-6.7-ami-application-hvm-2016.03.2-1-x86_64-gp2&lt;/li&gt;
+      &lt;li&gt;CentOS 6.3 hvm bashton3&lt;/li&gt;
+      &lt;li&gt;（以下略）&lt;br /&gt;
+むちゃくちゃ多い。全部は書ききれん。&lt;br /&gt;
+今回、「CentOS 6.3 hvm bashton3」を選択。特に根拠はない。&lt;br /&gt;
+　&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;インスタンス作成。&lt;br /&gt;
+cat /etc/redhat-release&lt;br /&gt;
+CentOS release 6.3 (Final)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Asteriskインストール。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;このインスタンスタイプだとrootパスワード要求されるのね。。。
+パスワード控えてなかったヨ&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;もっかいEC2作り直す。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;先日と同じ個所でエラー。&lt;br /&gt;
+make sampleは何者だ？調べてみるか。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;https://wiki.asterisk.org/wiki/display/AST/Installing+Sample+Files&lt;br /&gt;
+正しいコマンドは「make sample&lt;strong&gt;s&lt;/strong&gt;」では！？&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;OK！起動まで出来たぜ！&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Android版の X-Liteを探してみたが、見つからん・・・&lt;br /&gt;
+試しに別のソフトフォンを落としてみようか。
+    &lt;ul&gt;
+      &lt;li&gt;Cloud Softphone&lt;/li&gt;
+      &lt;li&gt;CSipSimple
+試しにこの２つを。&lt;br /&gt;
+　&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;・Cloud Softphone&lt;br /&gt;
+何だ Cloud ID って…？&lt;br /&gt;
+よくわからんから、もう１つのやつを動かしてみよう。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;・CSipSimple&lt;br /&gt;
+うーん。繋がらない。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;X-LiteのPC版があるみたいだから、それを使ってみよう。&lt;br /&gt;
+WinとMacか・・・。作業端末をWinに変更。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ダウンロードはここから。&lt;br /&gt;
+http://www.counterpath.com/x-lite-download/&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;インストールには .NET Frameworkの更新が必要とな。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;更新。再起動。&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Sun, 09 Jul 2017 21:23:00 +0900</pubDate>
         <link>/android/2017/07/09/Android-on-PBX.html</link>
