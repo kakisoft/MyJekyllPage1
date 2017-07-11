@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Project Draft Logs</title>
+    <title>妄想具現化プロジェクト</title>
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Jul 2017 00:21:27 +0900</pubDate>
-    <lastBuildDate>Wed, 12 Jul 2017 00:21:27 +0900</lastBuildDate>
+    <pubDate>Wed, 12 Jul 2017 00:28:56 +0900</pubDate>
+    <lastBuildDate>Wed, 12 Jul 2017 00:28:56 +0900</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -163,7 +163,8 @@ make sampleは何者だ？調べてみるか。&lt;/p&gt;
   &lt;li&gt;
     &lt;p&gt;OK！起動まで出来たぜ！&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;Android版の X-Liteを探してみたが、見つからん・・・&lt;br /&gt;
+  &lt;li&gt;次はクライアント側だ！&lt;br /&gt;
+が、Android版の X-Liteを探してみたが、見つからん・・・&lt;br /&gt;
 試しに別のソフトフォンを落としてみようか。
     &lt;ul&gt;
       &lt;li&gt;Cloud Softphone&lt;/li&gt;

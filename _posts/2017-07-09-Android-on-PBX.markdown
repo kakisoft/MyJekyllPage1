@@ -119,7 +119,8 @@ make sampleは何者だ？調べてみるか。
 
 1. OK！起動まで出来たぜ！
 
-1. Android版の X-Liteを探してみたが、見つからん・・・  
+1. 次はクライアント側だ！  
+が、Android版の X-Liteを探してみたが、見つからん・・・  
 試しに別のソフトフォンを落としてみようか。
  * Cloud Softphone
  * CSipSimple
