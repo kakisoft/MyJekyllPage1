@@ -5,8 +5,8 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Jul 2017 00:28:56 +0900</pubDate>
-    <lastBuildDate>Wed, 12 Jul 2017 00:28:56 +0900</lastBuildDate>
+    <pubDate>Wed, 12 Jul 2017 00:52:26 +0900</pubDate>
+    <lastBuildDate>Wed, 12 Jul 2017 00:52:26 +0900</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -193,7 +193,17 @@ http://www.counterpath.com/x-lite-download/&lt;/p&gt;
   &lt;li&gt;
     &lt;p&gt;インストールには .NET Frameworkの更新が必要とな。&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;更新。再起動。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;更新。再起動。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;X-Liteインストール完了。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;参考サイトと全く同じ設定にしておこう。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ステータスが「Available」にならないぜ！&lt;br /&gt;
+今日はこの辺にしておこう。インスタンスは一旦、消しとく。&lt;/li&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Sun, 09 Jul 2017 21:23:00 +0900</pubDate>
