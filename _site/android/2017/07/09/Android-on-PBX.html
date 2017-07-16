@@ -207,8 +207,8 @@ CentOS release 6.3 (Final)</p>
 make sampleは何者だ？調べてみるか。</p>
   </li>
   <li>
-    <p>https://wiki.asterisk.org/wiki/display/AST/Installing+Sample+Files<br />
-正しいコマンドは「make sample<strong>s</strong>」では！？</p>
+    <p>正しいコマンドは「make sample<strong>s</strong>」では！？<br />
+<a href="https://wiki.asterisk.org/wiki/display/AST/Installing+Sample+Files">https://wiki.asterisk.org/wiki/display/AST/Installing+Sample+Files</a></p>
   </li>
   <li>
     <p>OK！起動まで出来たぜ！</p>
@@ -253,8 +253,90 @@ WinとMacか・・・。作業端末をWinに変更。</p>
     <p>参考サイトと全く同じ設定にしておこう。</p>
   </li>
   <li>ステータスが「Available」にならないぜ！<br />
-今日はこの辺にしておこう。インスタンスは一旦、消しとく。</li>
+今日はこの辺にしておこう。インスタンスは一旦、消しとく。
+　<br />
+　</li>
 </ol>
+
+<h3 id="section-2">　日付：2017/07/16</h3>
+
+<ol>
+  <li>
+    <p>今度は Amazon Linuxでやってみよう。</p>
+  </li>
+  <li>
+    <p>AsteriskインストールまではOK。だが、<br />
+make samplesにて、<br />
+build_tools/make_sample_voicemail “//var/lib/asterisk” “//var/spool/asterisk”
+Installing file phoneprov/000000000000-directory.xml
+/usr/bin/install: 通常ファイル <code class="highlighter-rouge">/var/lib/asterisk/phoneprov/000000000000-directory.xml' を作成できません: そのようなファイルやディレクトリはありません
+Installing file phoneprov/000000000000-phone.cfg
+/usr/bin/install: 通常ファイル </code>/var/lib/asterisk/phoneprov/000000000000-phone.cfg’ を作成できません: そのようなファイルやディレクトリはありません
+Installing file phoneprov/000000000000.cfg
+/usr/bin/install: 通常ファイル <code class="highlighter-rouge">/var/lib/asterisk/phoneprov/000000000000.cfg' を作成できません: そのようなファイルやディレクトリはありません
+Installing file phoneprov/polycom.xml
+/usr/bin/install: 通常ファイル </code>/var/lib/asterisk/phoneprov/polycom.xml’ を作成できません: そのようなファイルやディレクトリはありません
+Installing file phoneprov/polycom_line.xml
+/usr/bin/install: 通常ファイル <code class="highlighter-rouge">/var/lib/asterisk/phoneprov/polycom_line.xml' を作成できません: そのようなファイルやディレクトリはありません
+Installing file phoneprov/snom-mac.xml
+/usr/bin/install: 通常ファイル </code>/var/lib/asterisk/phoneprov/snom-mac.xml’ を作成できません: そのようなファイルやディレクトリはありません
+make: *** [samples] エラー 1<br />
+とな。</p>
+  </li>
+  <li>
+    <p>make install<br />
+を忘れていたのが原因。</p>
+  </li>
+  <li>
+    <p>make config<br />
+We could not install init scripts for your distribution.<br />
+何故だ。</p>
+  </li>
+  <li>
+    <p>事前に、
+<code class="highlighter-rouge">touch /etc/redhat-release</code><br />
+を実行しておくといいらしい。
+<a href="http://www.spanky-world.com/asterisk/asterisk-page040.html">http://www.spanky-world.com/asterisk/asterisk-page040.html</a></p>
+  </li>
+  <li>
+    <p>sudo asterisk -vvvr<br />
+<code class="highlighter-rouge">
+=========================================================================  
+  == Parsing '/etc/asterisk/asterisk.conf':   == Found  
+  == Parsing '/etc/asterisk/extconfig.conf':   == Found  
+Unable to connect to remote asterisk (does /var/run/asterisk/asterisk.ctl exist?) </code><br />
+だと？</p>
+  </li>
+  <li>
+    <p>ldconfig<br />
+でいいのか？</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">=========================================================================  
+  == Parsing '/etc/asterisk/asterisk.conf':   == Found  
+  == Parsing '/etc/asterisk/extconfig.conf':   == Found  
+Connected to Asterisk 1.8.8.1 currently running on ip-172-31-2-102 (pid = 31351)  
+Verbosity is at least 3  
+ip-172-31-2-102*CLI&gt;</code> <br />
+これでOKだったみたい。
+Amazon Linuxでも問題なしという事で。</p>
+  </li>
+  <li>
+    <p>X-Liteを設定。
+おお！今度は Aailableになったぞ！
+上記の設定例で行くと、パスワードは「pass」となる。<br />
+ポート番号の指定は特に要らない。</p>
+  </li>
+  <li>
+    <p>続いて、Android側。<br />
+Media5-phoneをインストール。</p>
+  </li>
+  <li>
+    <p>あれ？どう設定するんだ。これ。<br />
+もう遅いから、明日にしよう。</p>
+  </li>
+</ol>
+
 
   </div>
 

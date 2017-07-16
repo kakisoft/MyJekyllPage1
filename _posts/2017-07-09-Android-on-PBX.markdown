@@ -114,8 +114,8 @@ CentOS release 6.3 (Final)
 1. 先日と同じ個所でエラー。  
 make sampleは何者だ？調べてみるか。
 
-1. https://wiki.asterisk.org/wiki/display/AST/Installing+Sample+Files  
-正しいコマンドは「make sample**s**」では！？
+1. 正しいコマンドは「make sample**s**」では！？  
+[https://wiki.asterisk.org/wiki/display/AST/Installing+Sample+Files](https://wiki.asterisk.org/wiki/display/AST/Installing+Sample+Files)
 
 1. OK！起動まで出来たぜ！
 
@@ -149,3 +149,72 @@ WinとMacか・・・。作業端末をWinに変更。
 
 1. ステータスが「Available」にならないぜ！  
 今日はこの辺にしておこう。インスタンスは一旦、消しとく。
+　  
+　  
+
+### 　日付：2017/07/16
+
+1. 今度は Amazon Linuxでやってみよう。
+
+1. AsteriskインストールまではOK。だが、  
+make samplesにて、  
+build_tools/make_sample_voicemail "//var/lib/asterisk" "//var/spool/asterisk"
+Installing file phoneprov/000000000000-directory.xml
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/000000000000-directory.xml' を作成できません: そのようなファイルやディレクトリはありません
+Installing file phoneprov/000000000000-phone.cfg
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/000000000000-phone.cfg' を作成できません: そのようなファイルやディレクトリはありません
+Installing file phoneprov/000000000000.cfg
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/000000000000.cfg' を作成できません: そのようなファイルやディレクトリはありません
+Installing file phoneprov/polycom.xml
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/polycom.xml' を作成できません: そのようなファイルやディレクトリはありません
+Installing file phoneprov/polycom_line.xml
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/polycom_line.xml' を作成できません: そのようなファイルやディレクトリはありません
+Installing file phoneprov/snom-mac.xml
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/snom-mac.xml' を作成できません: そのようなファイルやディレクトリはありません
+make: *** [samples] エラー 1  
+とな。
+
+1. make install  
+を忘れていたのが原因。
+
+1. make config  
+We could not install init scripts for your distribution.  
+何故だ。
+
+1. 事前に、
+```touch /etc/redhat-release```  
+を実行しておくといいらしい。
+[http://www.spanky-world.com/asterisk/asterisk-page040.html](http://www.spanky-world.com/asterisk/asterisk-page040.html)
+
+1. sudo asterisk -vvvr  
+```
+=========================================================================  
+  == Parsing '/etc/asterisk/asterisk.conf':   == Found  
+  == Parsing '/etc/asterisk/extconfig.conf':   == Found  
+Unable to connect to remote asterisk (does /var/run/asterisk/asterisk.ctl exist?)  ```  
+だと？ 
+
+1. ldconfig  
+でいいのか？
+
+1. ```=========================================================================  
+  == Parsing '/etc/asterisk/asterisk.conf':   == Found  
+  == Parsing '/etc/asterisk/extconfig.conf':   == Found  
+Connected to Asterisk 1.8.8.1 currently running on ip-172-31-2-102 (pid = 31351)  
+Verbosity is at least 3  
+ip-172-31-2-102*CLI>```   
+これでOKだったみたい。
+Amazon Linuxでも問題なしという事で。
+
+1. X-Liteを設定。
+おお！今度は Aailableになったぞ！
+上記の設定例で行くと、パスワードは「pass」となる。  
+ポート番号の指定は特に要らない。
+
+1. 続いて、Android側。  
+Media5-phoneをインストール。
+
+1. あれ？どう設定するんだ。これ。  
+もう遅いから、明日にしよう。
+
+
