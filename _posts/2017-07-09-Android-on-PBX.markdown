@@ -185,7 +185,7 @@ We could not install init scripts for your distribution.
 
 1. 事前に、
 ```touch /etc/redhat-release```  
-を実行しておくといいらしい。
+を実行しておくといいらしい。  
 [http://www.spanky-world.com/asterisk/asterisk-page040.html](http://www.spanky-world.com/asterisk/asterisk-page040.html)
 
 1. sudo asterisk -vvvr  
