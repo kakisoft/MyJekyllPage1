@@ -4,7 +4,8 @@ title:  LAN環境Android無料通話
 date:   2017-07-09 21:23:00 +0900
 categories: Android
 ---
-**【日付：2017/07/07〜2017/07/09】**
+
+### 　日付：2017/07/07〜2017/07/09
 
 1. (初動)    
 構内電話網(IP-PBX)を構築してAndroidで無料通話をやってみよう！  
@@ -76,9 +77,8 @@ Amazon Linux AMI release 2017.03
 1. 今日はもう遅いから寝よう。
 　  
 　  
-　  
 
-**【日付：2017/07/11】**  
+### 　日付：2017/07/11
 
 1. Cent OS は最近 ver 7に上がり、それ以前と大きく変わったみたい。
 先日、サンプル設定ファイルがインストールできなかったのは、それも原因の一旦？
@@ -137,7 +137,7 @@ make sampleは何者だ？調べてみるか。
 WinとMacか・・・。作業端末をWinに変更。
 
 1. ダウンロードはここから。  
-http://www.counterpath.com/x-lite-download/
+[http://www.counterpath.com/x-lite-download/](http://www.counterpath.com/x-lite-download/)
 
 1. インストールには .NET Frameworkの更新が必要とな。  
 

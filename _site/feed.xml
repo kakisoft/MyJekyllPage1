@@ -5,13 +5,13 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Jul 2017 00:52:26 +0900</pubDate>
-    <lastBuildDate>Wed, 12 Jul 2017 00:52:26 +0900</lastBuildDate>
+    <pubDate>Sun, 16 Jul 2017 09:45:48 +0900</pubDate>
+    <lastBuildDate>Sun, 16 Jul 2017 09:45:48 +0900</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>LAN環境Android無料通話</title>
-        <description>&lt;p&gt;&lt;strong&gt;【日付：2017/07/07〜2017/07/09】&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;h3 id=&quot;section&quot;&gt;　日付：2017/07/07〜2017/07/09&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -105,12 +105,11 @@ Amazon Linux AMI release 2017.03&lt;/p&gt;
   &lt;li&gt;
     &lt;p&gt;今日はもう遅いから寝よう。
 　&lt;br /&gt;
-　&lt;br /&gt;
 　&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;strong&gt;【日付：2017/07/11】&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;section-1&quot;&gt;　日付：2017/07/11&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -188,7 +187,7 @@ WinとMacか・・・。作業端末をWinに変更。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;ダウンロードはここから。&lt;br /&gt;
-http://www.counterpath.com/x-lite-download/&lt;/p&gt;
+&lt;a href=&quot;http://www.counterpath.com/x-lite-download/&quot;&gt;http://www.counterpath.com/x-lite-download/&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;インストールには .NET Frameworkの更新が必要とな。&lt;/p&gt;
