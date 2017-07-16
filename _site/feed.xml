@@ -5,8 +5,8 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Jul 2017 03:36:44 +0900</pubDate>
-    <lastBuildDate>Mon, 17 Jul 2017 03:36:44 +0900</lastBuildDate>
+    <pubDate>Mon, 17 Jul 2017 03:38:39 +0900</pubDate>
+    <lastBuildDate>Mon, 17 Jul 2017 03:38:39 +0900</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -216,20 +216,22 @@ WinとMacか・・・。作業端末をWinに変更。&lt;/p&gt;
   &lt;li&gt;
     &lt;p&gt;AsteriskインストールまではOK。だが、&lt;br /&gt;
 make samplesにて、&lt;br /&gt;
-build_tools/make_sample_voicemail “//var/lib/asterisk” “//var/spool/asterisk”
+&lt;code class=&quot;highlighter-rouge&quot;&gt;
+build_tools/make_sample_voicemail &quot;//var/lib/asterisk&quot; &quot;//var/spool/asterisk&quot;
 Installing file phoneprov/000000000000-directory.xml
-/usr/bin/install: 通常ファイル &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/asterisk/phoneprov/000000000000-directory.xml&#39; を作成できません: そのようなファイルやディレクトリはありません
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/000000000000-directory.xml&#39; を作成できません: そのようなファイルやディレクトリはありません
 Installing file phoneprov/000000000000-phone.cfg
-/usr/bin/install: 通常ファイル &lt;/code&gt;/var/lib/asterisk/phoneprov/000000000000-phone.cfg’ を作成できません: そのようなファイルやディレクトリはありません
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/000000000000-phone.cfg&#39; を作成できません: そのようなファイルやディレクトリはありません
 Installing file phoneprov/000000000000.cfg
-/usr/bin/install: 通常ファイル &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/asterisk/phoneprov/000000000000.cfg&#39; を作成できません: そのようなファイルやディレクトリはありません
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/000000000000.cfg&#39; を作成できません: そのようなファイルやディレクトリはありません
 Installing file phoneprov/polycom.xml
-/usr/bin/install: 通常ファイル &lt;/code&gt;/var/lib/asterisk/phoneprov/polycom.xml’ を作成できません: そのようなファイルやディレクトリはありません
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/polycom.xml&#39; を作成できません: そのようなファイルやディレクトリはありません
 Installing file phoneprov/polycom_line.xml
-/usr/bin/install: 通常ファイル &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/asterisk/phoneprov/polycom_line.xml&#39; を作成できません: そのようなファイルやディレクトリはありません
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/polycom_line.xml&#39; を作成できません: そのようなファイルやディレクトリはありません
 Installing file phoneprov/snom-mac.xml
-/usr/bin/install: 通常ファイル &lt;/code&gt;/var/lib/asterisk/phoneprov/snom-mac.xml’ を作成できません: そのようなファイルやディレクトリはありません
-make: *** [samples] エラー 1&lt;br /&gt;
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/snom-mac.xml&#39; を作成できません: そのようなファイルやディレクトリはありません
+make: *** [samples] エラー 1  
+&lt;/code&gt;&lt;br /&gt;
 とな。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;

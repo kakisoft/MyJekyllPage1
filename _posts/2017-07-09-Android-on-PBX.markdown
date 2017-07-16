@@ -158,6 +158,7 @@ WinとMacか・・・。作業端末をWinに変更。
 
 1. AsteriskインストールまではOK。だが、  
 make samplesにて、  
+```
 build_tools/make_sample_voicemail "//var/lib/asterisk" "//var/spool/asterisk"
 Installing file phoneprov/000000000000-directory.xml
 /usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/000000000000-directory.xml' を作成できません: そのようなファイルやディレクトリはありません
@@ -172,6 +173,7 @@ Installing file phoneprov/polycom_line.xml
 Installing file phoneprov/snom-mac.xml
 /usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/snom-mac.xml' を作成できません: そのようなファイルやディレクトリはありません
 make: *** [samples] エラー 1  
+```  
 とな。
 
 1. make install  

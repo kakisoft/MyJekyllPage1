@@ -267,20 +267,22 @@ WinとMacか・・・。作業端末をWinに変更。</p>
   <li>
     <p>AsteriskインストールまではOK。だが、<br />
 make samplesにて、<br />
-build_tools/make_sample_voicemail “//var/lib/asterisk” “//var/spool/asterisk”
+<code class="highlighter-rouge">
+build_tools/make_sample_voicemail "//var/lib/asterisk" "//var/spool/asterisk"
 Installing file phoneprov/000000000000-directory.xml
-/usr/bin/install: 通常ファイル <code class="highlighter-rouge">/var/lib/asterisk/phoneprov/000000000000-directory.xml' を作成できません: そのようなファイルやディレクトリはありません
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/000000000000-directory.xml' を作成できません: そのようなファイルやディレクトリはありません
 Installing file phoneprov/000000000000-phone.cfg
-/usr/bin/install: 通常ファイル </code>/var/lib/asterisk/phoneprov/000000000000-phone.cfg’ を作成できません: そのようなファイルやディレクトリはありません
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/000000000000-phone.cfg' を作成できません: そのようなファイルやディレクトリはありません
 Installing file phoneprov/000000000000.cfg
-/usr/bin/install: 通常ファイル <code class="highlighter-rouge">/var/lib/asterisk/phoneprov/000000000000.cfg' を作成できません: そのようなファイルやディレクトリはありません
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/000000000000.cfg' を作成できません: そのようなファイルやディレクトリはありません
 Installing file phoneprov/polycom.xml
-/usr/bin/install: 通常ファイル </code>/var/lib/asterisk/phoneprov/polycom.xml’ を作成できません: そのようなファイルやディレクトリはありません
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/polycom.xml' を作成できません: そのようなファイルやディレクトリはありません
 Installing file phoneprov/polycom_line.xml
-/usr/bin/install: 通常ファイル <code class="highlighter-rouge">/var/lib/asterisk/phoneprov/polycom_line.xml' を作成できません: そのようなファイルやディレクトリはありません
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/polycom_line.xml' を作成できません: そのようなファイルやディレクトリはありません
 Installing file phoneprov/snom-mac.xml
-/usr/bin/install: 通常ファイル </code>/var/lib/asterisk/phoneprov/snom-mac.xml’ を作成できません: そのようなファイルやディレクトリはありません
-make: *** [samples] エラー 1<br />
+/usr/bin/install: 通常ファイル `/var/lib/asterisk/phoneprov/snom-mac.xml' を作成できません: そのようなファイルやディレクトリはありません
+make: *** [samples] エラー 1  
+</code><br />
 とな。</p>
   </li>
   <li>
